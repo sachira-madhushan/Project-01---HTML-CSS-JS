@@ -22,7 +22,7 @@
                     <form>
                         <div class="form-group">
                           <label for="">Name</label>
-                          <input type="text" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter Name">
+                          <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp" placeholder="Enter Name">
                         </div>
 
                         <div class="form-group">
@@ -55,12 +55,8 @@
                                 </label>
                             </div>
                         </div>
-
-
-
-                        <button type="submit" class="btn btn-primary">Add</button>
                       </form>
-                    
+                      <button class="btn btn-primary " onclick="add_student()">Add</button>
                 </div>
                 
             </div>
@@ -92,45 +88,12 @@
 
 
         <!-- view student cards -->
-        <div class="cards">
-            </div><div class="card-view">
-                <div class="image">
-                    <img src="./src/boy.png" alt="" width="100px">
-                </div>
-                <div class="card-body">
-                    <table>
-                        <tr>
-                            <td>Student Name</td>
-                            <td>-</td>
-                            <td>Sachira Madhushan</td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td>-</td>
-                            <td>Sachira</td>
-                        </tr>
-                        <tr>
-                            <td>DOB</td>
-                            <td>-</td>
-                            <td>Sachira</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>-</td>
-                            <td>Sachira</td>
-                        </tr>
-                        <tr>
-                            <td>Contact</td>
-                            <td>-</td>
-                            <td>Sachira</td>
-                        </tr>
-                    </table>
-                    <button type="button" class="btn btn-danger " id="delete-button">Delete</button>
-                </div>
-            </div>
+        <div class="cards" id="cards">
+            
         </div>
 
       </div>
+      <script src="./js/index.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body>
